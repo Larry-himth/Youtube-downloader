@@ -36,7 +36,7 @@ while(running):
         else:
             selected_stream.download(file_path)
 
-        print("Download Complete!\n")
+        print("Download Complete!")
         
         again = input("Do you want to download another video?\n").lower()
         
@@ -50,7 +50,7 @@ while(running):
         running = True
     except Exception as e:
         print("An error occured: ",e)
-        running = True
+        running = False
         
 print("Thank you for using our Youtube Downloader!")
 git_link = webbrowser.open("https://github.com/Larry-himth/Youtube-downloader")
